@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Comment ça marche ?</title>
+    <title>Nous contacter</title>
   </head>
   <body>
     <header>
@@ -14,7 +14,9 @@
           <li><a href="/comment_ca_marche.html">Comment ça marche ?</a></li>
           <li><a href="#installation_medicale">Installation médicale</a></li>
           <li>
-            <a href="/je_cherche_un_remplacant.html">Je cherche un remplaçant</a>
+            <a href="/je_cherche_un_remplacant.html"
+              >Je cherche un remplaçant</a
+            >
           </li>
           <li><a href="/je_suis_remplacant.html">Je suis remplaçant</a></li>
           <li><a href="/obtenir_sa_licence.html">Obtenir sa licence</a></li>
@@ -22,126 +24,89 @@
         </ul>
       </nav>
     </header>
-    <main class="flex flex-col justify-between items-start p-12 gap-4">
-      <h1 class="blue-span text-3xl">Comment ça marche ?</h1>
-      <section class="flex flex-row gap-6">
-        <article
-          class="flex flex-col items-start gap-6"
-        >
-          <div class="flex flex-col items-start p-2 pb-6 bg gap-3">
-            <h3 class="blue-span">Vos futures demandes de remplacant</h3>
-            <div class="flex flex-col items-start text-color gap-4">
-              <div>
-                <li>
-                  Vous représentez un établissement de santé ou un cabinet
-                  médical et vous recherchez un
-                  <strong>médecin remplaçant</strong> occasionnellement, de
-                  façon régulière ou un futur clilaborateur ?
-                </li>
-                <li>
-                  Vous souhaitez confier à RemplaClinic une ou plusieurs
-                  missions de recherche de
-                  <strong>médecins remplaçants</strong> au sein de votre
-                  établissement ou de votre cabinet ?
-                </li>
-              </div>
-              <div>
-                <span> RemplaClinic vous propose </span>
-                <li>
-                  L’accès à une importante base de données d’internes et de
-                  <strong>médecins remplaçants</strong> à partir de vos critères
-                  de choix, spécialité et sous-spécialité(s)
-                </li>
-                <li>
-                  Un service de messagerie électronique avec l'envoi automatique
-                  de vos demandes aux potentiels
-                  <strong>médecins remplaçants</strong>
-                </li>
-              </div>
-              <div>
-                <strong
-                  >Pour avoir accès aux offres de médecins remplaçants
-                  correspondant à vos critères :</strong
+    <div class="flex flex-col justify-between items-start p-12 gap-4">
+      <h1 class="blue-span text-3xl">Nous contacter</h1>
+      <div class="flex flex-row justify-between text-color gap-96">
+        <div class="flex flex-col gap-7">
+          <div class="flex flex-col gap-3">
+            <div class="flex flex-col gap-5">
+              <h2 class="text-xl">
+                <strong>Une question, besoin d'aide ?</strong>
+              </h2>
+              <div class="w-24 h-1 bg-blue"></div>
+            </div>
+            <p>
+              Notre équipe est à votre disposition pour vous aider et répondre à
+              vos attentes.
+            </p>
+            <p>
+              Vous pouvez nous contacter :<br />
+              - par courrier : 14, avenue de l'Opéra 75001 Paris<br />
+              - par téléphone : 06 69 05 33 00<br />
+              - par email, en remplissant le formulaire ci-dessous
+            </p>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-5">
+              <h2 class="text-xl"><strong>Contact</strong></h2>
+              <div class="w-24 h-1 bg-blue"></div>
+            </div>
+            <form class="flex flex-col items-center gap-5">
+              <div class="w-96 flex flex-row justify-between">
+                <label for="edit-submitted-nom"
+                  >Nom
+                  <span class="form-required" title="This field is required"
+                    >*</span
+                  ></label
                 >
-                <li>
-                  Vous vous inscrivez en ligne (une inscription par spécialité)
-                </li>
-                <li>
-                  Vous serez recontacté sous 24 heures par l’équipe de
-                  RemplaClinic afin d’établir le type d’abonnement qu’il vous
-                  faut
-                </li>
+                <input
+                  type="text"
+                  class="form-text p-1 w-72 outline-none"
+                  id="edit-submitted-nom"
+                />
               </div>
-              <p>
-                Dès votre inscription validée, vous pourrez rechercher le
-                meilleur profil correspondant à votre spécialité, émettre vos
-                demandes, et suivre l’évolution de vos annonces par le biais
-                d’un tableau de bord personnalisé. <br />
-                RemplaClinic se charge d’envoyer vos demandes aux potentiels
-                <strong>médecins remplaçants</strong> dont les critères
-                correspondent.
-                <br />
-                Ils vous contacteront directement. <br />
-              </p>
-              <span class="blue-span mt-5">En cas d'urgence …</span>
-              <li>
-                Vous souhaitez qu'un de nos collaborateurs gère vos demandes de
-                <strong>médecins remplaçants</strong> à votre place :
-              </li>
-              <div class="flex flex-row justify-between">
-                <strong>
-                  Il suffit d'appeler notre équipe au : <br />
-                  <span><img src="/telephone.png" alt="telephone"></span
-                  >
-                  <br />
-                    ou de remplir le
-                    <span class="blue-span"
-                      ><a href="#nous_contacter">formulaire de contact</a></span
-                    >
-                    . <br />
-                    et remplaclinic vous recontactera
-                </strong>
-                <div class="angle_100gratuit_left"><img src="/angle_100gratuit.gif" alt="angle_100gratuit"
-                  class="w-36 h-36"></div>
-              
+              <div
+                class="w-96 flex flex-row justify-between"
+                id="webform-component-prenom"
+              >
+                <label for="edit-submitted-prenom">Prénom </label>
+                <input type="text" class="form-text p-1 w-72 outline-none" />
               </div>
-            </div>
+              <div class="w-96 flex flex-row justify-between">
+                <label for="edit-submitted-email"
+                  >Email
+                  <span class="form-required" title="This field is required"
+                    >*</span
+                  ></label
+                >
+                <input type="text" class="form-text p-1 w-72 outline-none" />
+              </div>
+              <div class="w-96 flex flex-row justify-between">
+                <label for="edit-submitted-telephone">Téléphone </label>
+                <input type="text" class="form-text p-1 w-72 outline-none" />
+              </div>
+              <div class="w-96 flex flex-row justify-between">
+                <label for="edit-submitted-message" class="flex flex-row gap-2"
+                  >Message <span class="form-required">*</span></label
+                >
+                <div>
+                  <textarea
+                    class="form-text w-72 h-20 outline-none p-2"
+                  ></textarea>
+                  <div class="grippie"></div>
+                </div>
+              </div>
+
+              <div class="w-full flex justify-end pt-7">
+                <input
+                  type="submit"
+                  value="Envoyer"
+                  class="form-submit pl-3 pr-3 p-1 text-xl text-white"
+                />
+              </div>
+            </form>
           </div>
-          <div class="flex flex-col items-start p-2 pb-6 bg-with gap-3">
-            <h3 class="blue-span">Je souhaite remplacer</h3>
-            <div class="text-color">
-              <p>Pour les remplaçants, c'est GRATUIT !</p>
-              <li>
-                Vous remplissez le formulaire d’inscription via un
-                <strong>module rapide et complet</strong>
-              </li>
-              <li>
-                Dès votre inscription prise en compte, vous recevrez
-                <strong>en temps réel</strong> dans votre boite mail les
-                demandes de <strong>remplacement médical</strong>
-                correspondant à vos critères
-              </li>
-            </div>
-            <div class="text-color">
-              <p>Les garanties de RemplaClinic</p>
-              <li>
-                os informations personnelles resteront
-                <strong> strictement confidentielles</strong>
-              </li>
-              <li>
-                RemplaClinic vérifiera votre statut d’interne ou de médecin
-                avant la parution de votre profil sur le site
-              </li>
-            </div>
-          </div>
-          <p>
-            <strong class="text-color"
-              >Être présent sur RemplaClinic, c’est assurer l'efficacité
-              optimale de vos recherches de remplaçants.</strong
-            >
-          </p>
-        </article>
-       
+        </div>
         <article class="flex flex-col gap-5">
           <aside class="bg-blue p-3 pt-5 pb-5 flex flex-col gap-4 items-center">
             <div class="text-white flex items-center flex-col">
@@ -239,7 +204,11 @@
                 </div>
               </div>
               <div>
-                <input type="submit" value="Rechercher" class="form-submit pl-3 pr-3 p-1 text-xl text-white"/>
+                <input
+                  type="submit"
+                  value="Rechercher"
+                  class="form-submit pl-3 pr-3 p-1 text-xl text-white"
+                />
               </div>
             </form>
           </aside>
@@ -324,7 +293,6 @@
                     </div>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
@@ -332,19 +300,21 @@
             <div class="bg-img">
               <h2 class="relative left-16 top-5 text-xl">Infos utiles</h2>
             </div>
-            <div class=" bg-blue p-4 pb-10">
+            <div class="bg-blue p-4 pb-10">
               <p>
                 Que vous soyez remplacé ou remplaçant, pour un remplacement
                 saisonnier ou régulier, retrouvez toutes les informations utiles
-                selon votre situation…<br /><a href="/infos-utiles"
-                 class="text-color underline" >En savoir plus…</a
+                selon votre situation…<br /><a
+                  href="/infos-utiles"
+                  class="text-color underline"
+                  >En savoir plus…</a
                 >
               </p>
             </div>
           </div>
         </article>
-      </section>
-    </main>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

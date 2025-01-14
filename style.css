@@ -2,63 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-color{
-    font-size: 14.5px;
-    color: #4E4E4E;
-}
-.blue-span{
-    color: #5BB7DF;
-}
+.text-color{ font-size: 14.5px; color: #4E4E4E;}
+.blue-span{ color: #5BB7DF;}
 
-.bg{
-    background-color: #EBEBEB;
-}
+.bg{background-color: #EBEBEB;}
 
-.bg-blue{
-    background-color: #5BB7DF;
-}
+.bg-blue{ background-color: #5BB7DF;}
 
-.bg-blue-ciel{
-    background-color: #E4F5FB;
-}
+.bg-blue-ciel{ background-color: #E4F5FB;}
+.border-blue-ciel{ border: 1px solid #5BB7DF;}
 
-.bg-with{
-    background-color: #E4F5FB;
-}
+.bg-with{ background-color: #E4F5FB;}
 
-.blue-bg{
-    background-color: #297FCB;
-}
+.blue-bg{background-color: #297FCB;}
 
-.bg-img{
-    background-image: url("/sidebar_infos.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50px;
-}
+.bg-img{ background-image: url("/sidebar_infos.png"); background-repeat: no-repeat; background-size: cover; height: 50px;}
 
-.angle_100gratuit_left{
-    position: relative;
-    left: 85%;
-    top: 100%;
-}
+.angle_100gratuit_left{ position: relative; left: 85%; top: 100%;}
 
-.form-submit{
-    background-color: #4E4E4E;
-    box-shadow: 0px 0px 1px 1px #4E4E4E;
-    border: 1px solid #CFCFCF;
-    cursor: pointer;
-}
+.form-submit{ background-color: #4E4E4E; box-shadow: 0px 0px 1px 1px #4E4E4E;  border: 1px solid #CFCFCF;
+    cursor: pointer;}
 
-.form-submit:hover{
-    background-color: #807f7f;
-}
+.form-submit:hover{ background-color: #807f7f;}
 
-.inputShadow{
-    box-shadow: 0px 0px 1px 1px #4E4E4E;
-}
+.inputShadow{ box-shadow: 0px 0px 1px 1px #4E4E4E;}
 
-.form-text{
- background-color: #EAEAEA;
- border-top: 1px solid #C1C1C1;
-}
+.form-text{ background-color: #EAEAEA; border-top: 1px solid #C1C1C1;}
+
+.block-partenariat{background-image: url(/bloc-partenariat.png); background-repeat: no-repeat; background-size: cover;
+height: 300px; border-radius: 0 0 10px 10px;}
+
+.custom-submit{ background-color: #4E4E4E; box-shadow: 0px 0px 1px 1px #4E4E4E; cursor: pointer;}

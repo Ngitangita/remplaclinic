@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Je crée mon compte</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="flex flex-row justify-around items-center bg-gray-500">
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/comment_ca_marche.html">Comment ça marche ?</a></li>
+          <li><a href="#installation_medicale">Installation médicale</a></li>
+          <li>
+            <a href="/je_cherche_un_remplacant.html"
+              >Je cherche un remplaçant</a
+            >
+          </li>
+          <li><a href="/je_suis_remplacant.html">Je suis remplaçant</a></li>
+          <li><a href="/obtenir_sa_licence.html">Obtenir sa licence</a></li>
+          <li><a href="/contacts.html">Nous contacter</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="flex flex-col justify-between items-start p-12 gap-4">
+      <h1 class="blue-span text-3xl">Je crée mon compte</h1>
+      <div class="flex flex-row gap-6 text-color justify-between">
+        <div class="flex flex-col gap-2">
+          <div class="w-[870px] h-[580px] flex flex-col p-3 gap-4 border">
+            <h2 class="text-2xl"><b>Vos informations personnelles</b></h2>
+            <div class="flex flex-row justify-between">
+              <div
+                class="w-[430px] flex flex-col gap-4 justify-start items-end"
+              >
+                <!-- Civilité -->
+                <div class="w-96 flex flex-row justify-end gap-2">
+                  <label for="civilite" class="form-label">
+                    Civilité <span class="required">*</span>
+                  </label>
+                  <select
+                    id="civilite"
+                    name="civilite"
+                    class="form-text p-2 w-64 outline-none"
+                  >
+                    <option value="">- Choisir une valeur -</option>
+                    <option value="M">Monsieur</option>
+                    <option value="Mme">Madame</option>
+                    <option value="Mlle">Mademoiselle</option>
+                  </select>
+                </div>
+
+                <!-- Prénom -->
+                <div class="w-96 flex flex-row justify-end gap-2">
+                  <label for="prenom"
+                    >Prénom <span class="required">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-text p-2 w-64 outline-none"
+                    id="prenom"
+                  />
+                </div>
+
+                <!-- Nom -->
+                <div class="w-96 flex flex-row justify-end gap-2">
+                  <label for="nom">Nom <span class="required">*</span></label>
+                  <input
+                    type="text"
+                    class="form-text p-2 w-64 outline-none"
+                    id="nom"
+                  />
+                </div>
+                <!-- Numéro d'inscription -->
+                <div class="w-[100%] flex flex-row justify-end gap-2">
+                  <label for="num-inscription"
+                    >Numéro d'inscription au conseil de l'Ordre
+                    <span class="required">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-text p-2 w-full outline-none"
+                    id="num-inscription"
+                  />
+                </div>
+
+                <!-- Téléphone -->
+                <div class="w-96 flex flex-row justify-end gap-2">
+                  <label for="telephone">
+                    Téléphone
+                    <span class="required">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    class="form-text p-2 w-64 outline-none"
+                    id="telephone"
+                    placeholder="Ex : 0142260032"
+                  />
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-4 justify-center items-end">
+                <!-- Adresse -->
+                <div class="w-96 flex flex-row justify-end gap-2">
+                  <label for="adresse" class="form-label">Adresse</label>
+                  <input
+                    type="text"
+                    id="adresse"
+                    name="adresse"
+                    class="form-text p-2 w-64 outline-none"
+                    maxlength="255"
+                  />
+                </div>
+                <div class="w-96 flex flex-row justify-end gap-2">
+                  <label for="complement-adresse" class="form-label"
+                    >Complément d'adresse</label
+                  >
+                  <input
+                    type="text"
+                    id="complement-adresse"
+                    name="complement_adresse"
+                    class="form-text p-2 w-80 outline-none"
+                    maxlength="255"
+                  />
+                </div>
+                <div class="w-96 flex flex-row justify-end gap-2">
+                  <label for="code-postal" class="form-label"
+                    >Code postal</label
+                  >
+                  <input
+                    type="text"
+                    id="code-postal"
+                    name="code_postal"
+                    class="form-text p-2 w-64 outline-none"
+                    maxlength="10"
+                  />
+                </div>
+                <div class="w-96 flex flex-row justify-end gap-2">
+                  <label for="ville" class="form-label">Ville</label>
+                  <input
+                    type="text"
+                    id="ville"
+                    name="ville"
+                    class="form-text p-2 w-64 outline-none"
+                    maxlength="255"
+                  />
+                </div>
+
+                <!-- Année de naissance -->
+                <div class="w-96 flex flex-row justify-end gap-2">
+                  <label for="annee-naissance" class="form-label">
+                    Année de naissance <span class="required">*</span>
+                  </label>
+                  <input
+                    type="number"
+                    id="annee-naissance"
+                    name="annee_naissance"
+                    class="form-text p-2 w-72 outline-none"
+                    placeholder="Ex : 1977"
+                    maxlength="4"
+                  />
+                </div>
+
+                <!-- Nationalité -->
+                <div class="w-96 flex flex-row justify-end gap-2">
+                  <label for="nationalite" class="form-label">
+                    Nationalité <span class="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="nationalite"
+                    name="nationalite"
+                    class="form-text p-2 w-64 outline-none"
+                    maxlength="255"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-blue-ciel border-blue-ciel text-sm p-4 flex gap-4 flex-col"
+            >
+              <div class="flex flex-row justify-between">
+                <div>
+                  <label for="edit-mail"
+                    >E-mail
+                    <span class="form-required" title="This field is required"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    type="text"
+                    id="edit-mail"
+                    name="mail"
+                    class="form-text required p-2"
+                  />
+                </div>
+                <div>
+                  <div class="password-strength"></div>
+                  <label for="edit-pass-pass1"
+                    >Mot de passe
+                    <span class="form-required" title="This field is required"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    class="password-field form-text required password-processed p-2"
+                    type="password"
+                    id="edit-pass-pass1"
+                    name="pass[pass1]"
+                  />
+                </div>
+                <div>
+                  <label for="edit-pass-pass2"
+                    >Confirmer
+                    <span class="form-required" title="This field is required"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    class="password-confirm form-text required p-2"
+                    type="password"
+                    id="edit-pass-pass2"
+                    name="pass[pass2]"
+                  />
+                </div>
+              </div>
+              <div class="blue-span">
+                <i>
+                  Un mot de passe de votre choix, composé de lettres ou de
+                  chiffres, minimum 6 caractères, sans espace ni caractère
+                  "exotique"...<br />et dont vous vous souviendrez
+                  facilement...</i
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------------------------------------------------- -->
+          <div class="border p-4">
+            <h1 class="text-2xl pb-10"><b>Informations de votre profil</b></h1>
+            <div>
+              <div class="flex flex-row flex-wrap gap-5">
+                <div class="flex flex-row gap-2 items-center w-96 p-1">
+                  <label
+                    for="edit-field-annee-internat-und-0-value"
+                    class="text-end"
+                    >Année d'obtention de l'internat
+                  </label>
+                  <input
+                    class="form-text p-2 w-56 outline-none"
+                    placeholder="Ex : 1977"
+                    type="text"
+                    id="edit-field-annee-internat-und-0-value"
+                    name="field_annee_internat[und][0][value]"
+                    value=""
+                    size="60"
+                    maxlength="255"
+                  />
+                </div>
+                <div class="flex flex-row gap-1 items-center w-96 justify-end">
+                  <label for="edit-field-statut-actuel-und"
+                    >Statut actuel
+                    <span class="form-required" title="This field is required"
+                      >*</span
+                    ></label
+                  >
+                  <div class="fond-select">
+                    <select
+                      id="edit-field-statut-actuel-und"
+                      name="field_statut_actuel[und]"
+                      class="form-text p-2 w-56 outline-none"
+                    >
+                      <option value="_none">- Choisir une valeur -</option>
+                      <option value="33">Assistant</option>
+                      <option value="31">Chef de clinique</option>
+                      <option value="34">Interne</option>
+                      <option value="494">Médecin remplaçant</option>
+                      <option value="32">Praticien hospitalier</option>
+                      <option value="35">Autre</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="flex flex-row gap-1 items-center w-96 justify-end">
+                  <label for="edit-field-specialite-und">Spécialité </label>
+                  <div class="fond-select">
+                    <select
+                      id="edit-field-specialite-und"
+                      name="field_specialite[und]"
+                      class="form-text p-2 w-56 outline-none"
+                    >
+                      <option value="287">Anatomopathologie</option>
+                      <option value="268">Anesthésie-réanimation</option>
+                      <option value="288">Biologie médicale</option>
+                      <option value="269">Cardiologie</option>
+                      <option value="300">Chirurgie maxillo-faciale</option>
+                      <option value="292">Chirurgie plastique</option>
+                      <option value="502">Chirurgie thoracique</option>
+                      <option value="276">Chirurgie vasculaire</option>
+                      <option value="275">Chirurgie viscérale</option>
+                      <option value="282">Dermatologie</option>
+                      <option value="284">Endocrinologie-diabétologie</option>
+                      <option value="289">Gériatrie</option>
+                      <option value="272">Gynécologie - Obstétrique</option>
+                      <option value="429">Hématologie</option>
+                      <option value="277">Hépato-Gastro-Enterologie</option>
+                      <option value="296">Maladies infectieuses</option>
+                      <option value="503">Médecin nutritionniste</option>
+                      <option value="297">Médecine du travail</option>
+                      <option value="285">Médecine générale</option>
+                      <option value="286">Médecine interne</option>
+                      <option value="273">Médecine nucléaire</option>
+                      <option value="293">
+                        Médecine physique et réadaptation
+                      </option>
+                      <option value="498">Médecine Urgences</option>
+                      <option value="499">Médecine vasculaire</option>
+                      <option value="281">Néphrologie</option>
+                      <option value="279">Neurologie</option>
+                      <option value="295">Oncologie</option>
+                      <option value="278">Ophtalmologie</option>
+                      <option value="290">ORL</option>
+                      <option value="267">Orthopédie</option>
+                      <option value="270">Pédiatrie</option>
+                      <option value="501">Pédopsychiatrie</option>
+                      <option value="283">Pneumologie</option>
+                      <option value="280">Psychiatrie</option>
+                      <option value="271">Radiologie</option>
+                      <option value="500">Réanimation</option>
+                      <option value="294">Rhumatologie</option>
+                      <option value="298">Santé publique</option>
+                      <option value="291">Stomatologie</option>
+                      <option value="274">Urologie</option>
+                      <option value="497">Vétérinaire</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- ---------------------------------------------------------------- -->
+
+              <div class="p-4">
+                <div class="flex flex-row gap-2 justify-center">
+                  <label for="edit-field-mobilite-und"
+                    >Mobilité
+                    <span class="form-required" title="This field is required"
+                      >*</span
+                    ></label
+                  >
+                  <div class="flex flex-row gap-48">
+                    <div class="flex flex-col gap-1">
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-463"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-463"
+                          name="field_mobilite[und][463]"
+                          value="463"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-463"
+                          >Alsace
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-464"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-464"
+                          name="field_mobilite[und][464]"
+                          value="464"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-464"
+                          >Aquitaine
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-465"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-465"
+                          name="field_mobilite[und][465]"
+                          value="465"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-465"
+                          >Auvergne
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-466"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-466"
+                          name="field_mobilite[und][466]"
+                          value="466"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-466"
+                          >Basse-Normandie
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-467"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-467"
+                          name="field_mobilite[und][467]"
+                          value="467"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-467"
+                          >Bourgogne
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-468"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-468"
+                          name="field_mobilite[und][468]"
+                          value="468"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-468"
+                          >Bretagne
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-469"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-469"
+                          name="field_mobilite[und][469]"
+                          value="469"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-469"
+                          >Centre
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-470"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-470"
+                          name="field_mobilite[und][470]"
+                          value="470"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-470"
+                          >Champagne-Ardenne
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-471"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-471"
+                          name="field_mobilite[und][471]"
+                          value="471"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-471"
+                          >Corse
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-504"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-504"
+                          name="field_mobilite[und][504]"
+                          value="504"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-504"
+                          >Europe
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-472"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-472"
+                          name="field_mobilite[und][472]"
+                          value="472"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-472"
+                          >Franche-Comté
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-485"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-485"
+                          name="field_mobilite[und][485]"
+                          value="485"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-485"
+                          >Guadeloupe
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-486"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-486"
+                          name="field_mobilite[und][486]"
+                          value="486"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-486"
+                          >Guyane
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-473"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-473"
+                          name="field_mobilite[und][473]"
+                          value="473"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-473"
+                          >Haute-Normandie
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-474"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-474"
+                          name="field_mobilite[und][474]"
+                          value="474"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-474"
+                          >Ile-de-France
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-487"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-487"
+                          name="field_mobilite[und][487]"
+                          value="487"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-487"
+                          >La Réunion
+                        </label>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-475"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-475"
+                          name="field_mobilite[und][475]"
+                          value="475"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-475"
+                          >Languedoc-Roussillon
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-476"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-476"
+                          name="field_mobilite[und][476]"
+                          value="476"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-476"
+                          >Limousin
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-477"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-477"
+                          name="field_mobilite[und][477]"
+                          value="477"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-477"
+                          >Lorraine
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-488"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-488"
+                          name="field_mobilite[und][488]"
+                          value="488"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-488"
+                          >Martinique
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-489"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-489"
+                          name="field_mobilite[und][489]"
+                          value="489"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-489"
+                          >Mayotte
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-478"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-478"
+                          name="field_mobilite[und][478]"
+                          value="478"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-478"
+                          >Midi-Pyrénées
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-479"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-479"
+                          name="field_mobilite[und][479]"
+                          value="479"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-479"
+                          >Nord-Pas-de-Calais
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-490"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-490"
+                          name="field_mobilite[und][490]"
+                          value="490"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-490"
+                          >Nouvelle-Calédonie
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-480"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-480"
+                          name="field_mobilite[und][480]"
+                          value="480"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-480"
+                          >Pays de la Loire
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-481"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-481"
+                          name="field_mobilite[und][481]"
+                          value="481"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-481"
+                          >Picardie
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-482"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-482"
+                          name="field_mobilite[und][482]"
+                          value="482"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-482"
+                          >Poitou-Charentes
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-491"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-491"
+                          name="field_mobilite[und][491]"
+                          value="491"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-491"
+                          >Polynésie Française
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-483"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-483"
+                          name="field_mobilite[und][483]"
+                          value="483"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-483"
+                          >Provence-Alpes-Côte-d'Azur
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-484"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-484"
+                          name="field_mobilite[und][484]"
+                          value="484"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-484"
+                          >Rhône-Alpes
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-492"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-492"
+                          name="field_mobilite[und][492]"
+                          value="492"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-492"
+                          >Terres Australes et Antarctiques
+                        </label>
+                      </div>
+                      <div
+                        class="form-item form-type-checkbox form-item-field-mobilite-und-493"
+                      >
+                        <input
+                          type="checkbox"
+                          id="edit-field-mobilite-und-493"
+                          name="field_mobilite[und][493]"
+                          value="493"
+                          class="form-checkbox"
+                        />
+                        <label class="option" for="edit-field-mobilite-und-493"
+                          >Wallis et Futuna
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blue-span text-xl w-full text-center">
+                  <a href="" class="check_all"
+                    >Sélectionner toutes les régions</a
+                  >
+                  <a href="" class="decheck_all" style="display: none"
+                    >Désélectionner toutes les régions</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------------------------------------------------------------- -->
+          <div class="border p-4 flex flex-col gap-10">
+            <h1 class="text-xl"><b>Vos commentaires</b></h1>
+            <div
+              class="form-textarea-wrapper resizable textarea-processed resizable-textarea"
+            >
+              <textarea
+                class="form-text p-2 w-full outline-none"
+                id="edit-field-commentaires-remplacant-und-0-value"
+                name="field_commentaires_remplacant[und][0][value]"
+                cols="40"
+                rows="6"
+              ></textarea>
+              <div class="grippie"></div>
+            </div>
+          </div>
+          <!-- ----------------------------------------------------------------------------------- -->
+          <div class="bg-blue p-4 flex flex-col gap-4">
+            <h1 class="text-xl"><b>Validation</b></h1>
+            <div class=" flex flex-col gap-5">
+              <div class="flex flex-row gap-2">
+                <input
+                  type="checkbox"
+                  id="edit-field-cgu-und"
+                  name="field_cgu[und]"
+                  value="1"
+                  class="form-checkbox"
+                />
+                <div>
+                  J'accepte les
+                  <a href="/node/990" target="_blank"
+                    class="text-blue-500">conditions générales d'utilisation</a
+                  >
+                  et m'engage à les respecter. *
+                </div>
+              </div>
+              <div class="flex flex-row gap-2 items-start">
+                <input
+                  type="checkbox"
+                  id="edit-field-fournir-licence-de-remplac-und"
+                  name="field_fournir_licence_de_remplac[und]"
+                  value="1"
+                  class="form-checkbox"
+                />
+                <div class="flex flex-col gap-3">
+                  Si je suis étudiant(e) en troisième cycle, je m'engage à
+                  fournir une licence de remplacement au demandeur.<br />
+                  <span
+                    class="text-white">Si vous ne disposez pas de la licence, vous pouvez vous
+                    renseigner <a target="_blank" href="/node/988" class="text-blue-500">ici</a></span
+                  >
+                </div>
+              </div>
+            </div>
+              <div>
+                <div class="w-full flex justify-center" id="edit-actions">
+                  <input
+                    type="submit"
+                    id="edit-submit"
+                    name="op"
+                    value="Valider"
+                    class="text-xl form-submit text-white pt-2 pb-2 pr-10 pl-10"
+                  />
+                </div>
+                <div class="w-full flex justify-between items-end">
+                  <div class="donnees-obligatoire">* Données obligatoire</div>
+                  <a
+                    href="/user/supprimer-compte"
+                    id="btn-se-desinscrire"
+                    class="custom-submit text-white p-3 pt-1 pb-1 rounded text-xl"
+                    >Me désinscrire</a
+                  >
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------------- -->
+        <article class="flex flex-col gap-5">
+          <div>
+            <div>
+              <div>
+                <div class="text-center text-color">
+                  <p>Quelques références</p>
+                </div>
+
+                <div class="relative w-[270px] h-[130px]">
+                  <div
+                    id="views_slideshow_cycle_div_partenaires-block_1_0"
+                    class="absolute top-0 left-0 hidden z-[6] opacity-0 w-[270px] h-[130px]"
+                  >
+                    <div class="w-full h-full flex items-center justify-center">
+                      <img
+                        src="/clinea_new-bleu-rvb_002.jpg"
+                        class="w-[300px] h-[130px]"
+                        alt="Logo Clinea"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    id="views_slideshow_cycle_div_partenaires-block_1_1"
+                    class="absolute top-0 left-0 hidden z-[6] opacity-0 w-[270px] h-[130px]"
+                  >
+                    <div class="w-full h-full flex items-center justify-center">
+                      <img
+                        src="/ramsay_logo.jpg"
+                        class="w-[300px] h-[130px]"
+                        alt="Logo Ramsay"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    id="views_slideshow_cycle_div_partenaires-block_1_2"
+                    class="absolute top-0 left-0 hidden z-[6] opacity-0 w-[270px] h-[130px]"
+                  >
+                    <div class="w-full h-full flex items-center justify-center">
+                      <img
+                        src="/elsan_logo.png"
+                        class="w-[300px] h-[130px]"
+                        alt="Logo Elsan"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    id="views_slideshow_cycle_div_partenaires-block_1_3"
+                    class="absolute top-0 left-0 hidden z-[6] opacity-0 w-[270px] h-[130px]"
+                  >
+                    <div class="w-full h-full flex items-center justify-center">
+                      <img
+                        src="/logo-inicea.jpg"
+                        class="w-[300px] h-[130px]"
+                        alt="Logo Inicea"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    id="views_slideshow_cycle_div_partenaires-block_1_4"
+                    class="absolute top-0 left-0 hidden z-[6] opacity-0 w-[270px] h-[130px]"
+                  >
+                    <div class="w-full h-full flex items-center justify-center">
+                      <img
+                        src="/logo_c2s_.png"
+                        class="w-[300px] h-[130px]"
+                        alt="Logo C2S"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    id="views_slideshow_cycle_div_partenaires-block_1_5"
+                    class="absolute top-0 left-0 block z-[7] opacity-100 w-[270px] h-[130px]"
+                  >
+                    <div class="w-full h-full flex items-center justify-center">
+                      <img
+                        src="/macsf.png"
+                        class="w-[300px] h-[130px]"
+                        alt="Logo MACSF"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-72 text-white pt-5">
+            <div class="bg-img">
+              <h2 class="relative left-16 top-5 text-xl">Infos utiles</h2>
+            </div>
+            <div class="bg-blue p-4 pb-10">
+              <p>
+                Que vous soyez remplacé ou remplaçant, pour un remplacement
+                saisonnier ou régulier, retrouvez toutes les informations utiles
+                selon votre situation…<br /><a
+                  href="/infos-utiles"
+                  class="text-color underline"
+                  >En savoir plus…</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="block-partenariat flex justify-center p-3 pt-20">
+            <p>&nbsp;</p>
+            <div class="flex flex-row h-full">
+              <div class="flex flex-col justify-center gap-6">
+                <img src="/picto-part-1.png" /><img
+                  src="/picto-part-2.png"
+                /><img src="/picto-part-3.png" />
+              </div>
+              <div class="flex flex-col justify-center pl-4 w-48 blue-span">
+                <a href="/nous-contacter">Besoin d'une assistance comptable ?</a
+                ><br /><a href="/nous-contacter"
+                  >Besoin d'une assistance juridique ?</a
+                ><br /><a href="/nous-contacter"
+                  >Besoin d'une assurance professionnelle ?</a
+                >
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
